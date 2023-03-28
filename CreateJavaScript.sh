@@ -12,7 +12,7 @@ public class CreateJavaScript {
         var outputFile = Path.of("target","App.sh");
 
         var content = Files.readString(inputFile);
-        var contentWithDeclaration = """"
+        var contentWithDeclaration = """
         $declaration
         $content
         """.replace("$declaration", scriptDeclaration)
